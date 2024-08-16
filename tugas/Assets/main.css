@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS untuk Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #411132;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar-left h2 {
+    margin: 0;
+    color: #fff;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.user-info i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.user-info span {
+    color: #fff;
+}
+
+/* CSS untuk Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh; /* 100% tinggi viewport */
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    
+}
+
+.sidebar h2 {
+    height: 50px;
+    background-color: #411132;
+    color: #fff;
+    text-align: center;
+    text-justify: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* CSS untuk Konten Utama */
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.content p {
+    color: #666;
+}
+
+
+
+/* Tambahkan ke style.css */
+#addNoteForm {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#addNoteForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#addNoteForm input,
+#addNoteForm textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#addNoteForm button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#addNoteForm button:hover {
+    background-color: #0056b3;
+}
+
+#addNoteForm #cancelAddNote {
+    background-color: #6c757d;
+}
+
+#addNoteForm #cancelAddNote:hover {
+    background-color: #5a6268;
+}
+
+
+/* style note*/
+
+#notesList{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#notesList{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.notes-table th, .notes-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.notes-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.notes-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.notes-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.note-title {
+    font-weight: bold;
+    color: #411132;
+}
+
+.note-content {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.note-timestamp {
+    font-size: 0.9em;
+    color: #999;
+    text-align: right;
+}
